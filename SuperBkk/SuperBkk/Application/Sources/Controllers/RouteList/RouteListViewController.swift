@@ -61,8 +61,10 @@ extension RouteListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RouteListCell.reuseIdentifier, for: indexPath) as? RouteListCell
-        cell?.RouteName.text = ""//String(self.dataSource[indexPath.row].stop_name)
-        cell?.RouteDescription.text = ""
+        cell?.RouteName.text = String(self.dataSource[indexPath.row].shortName)
+        cell?.RouteDescription.text = String(self.dataSource[indexPath.row].description)
+        cell?.RouteName.backgroundColor = UIColor(hexString: self.dataSource[indexPath.row].color)
+        cell?.RouteName.textColor = UIColor(hexString: self.dataSource[indexPath.row].textColor)
         return cell!
     }
 }

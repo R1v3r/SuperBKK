@@ -36,7 +36,7 @@ class StopListViewController: CollectionViewController {
     func reload() {
         Alamofire.request(SuperchargeApi.get)
             .responseJSON { response in
-                print(response)
+                print(response.description)
                 guard response.result.isSuccess else {
                     print("Error while fetching tags: \(String(describing: response.result.error))")
                     return

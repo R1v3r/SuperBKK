@@ -11,6 +11,7 @@ import Alamofire
 import PromiseKit
 
 public enum SuperchargeApi: URLRequestConvertible {
+    
     static let baseURLPath = "http://bkk-api.supercharge.io/stops"
     
     case post
@@ -35,12 +36,6 @@ public enum SuperchargeApi: URLRequestConvertible {
     }
     
     public func asURLRequest() throws -> URLRequest {
-        let parameters: [String: Any] = {
-            switch self {
-            default:
-                return [:]
-            }
-        }()
         
         let url = try SuperchargeApi.baseURLPath.asURL()
         
@@ -48,6 +43,6 @@ public enum SuperchargeApi: URLRequestConvertible {
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10 * 1000)
         
-        return try URLEncoding.default.encode(request, with: parameters)
+        return try URLEncoding.default.encode(request, with: [:])
     }
 }
