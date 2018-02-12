@@ -15,6 +15,10 @@
 		3EAAC5B62031BFF1009181A7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B52031BFF1009181A7 /* CollectionViewController.swift */; };
 		3EAAC5B82031C012009181A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B72031C012009181A7 /* MainViewController.swift */; };
 		3EAAC5BA2031C032009181A7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B92031C032009181A7 /* NavigationViewController.swift */; };
+		3EAAC5BC2031C19D009181A7 /* NearbyStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5BB2031C19D009181A7 /* NearbyStops.swift */; };
+		3EAAC5BE2031C24A009181A7 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5BD2031C24A009181A7 /* Json.swift */; };
+		3EAAC5C42031C6CB009181A7 /* SuperchargeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5C32031C6CB009181A7 /* SuperchargeApi.swift */; };
+		3EAAC5C62031C73E009181A7 /* BkkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5C52031C73E009181A7 /* BkkApi.swift */; };
 		A865240BE56C392C8420CD16 /* Pods_SuperBkk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		3EAAC5B52031BFF1009181A7 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		3EAAC5B72031C012009181A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3EAAC5B92031C032009181A7 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3EAAC5BB2031C19D009181A7 /* NearbyStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyStops.swift; sourceTree = "<group>"; };
+		3EAAC5BD2031C24A009181A7 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		3EAAC5C32031C6CB009181A7 /* SuperchargeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperchargeApi.swift; sourceTree = "<group>"; };
+		3EAAC5C52031C73E009181A7 /* BkkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BkkApi.swift; sourceTree = "<group>"; };
 		45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperBkk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE61860FF367F63F9FFC3C7 /* Pods-SuperBkk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperBkk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk.debug.xcconfig"; sourceTree = "<group>"; };
 		967AC7117CD6CD231F7A178D /* Pods-SuperBkk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperBkk.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 		3EAAC5AE2031BDBB009181A7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3EAAC5BB2031C19D009181A7 /* NearbyStops.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 		3EAAC5AF2031BDC0009181A7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				3EAAC5BD2031C24A009181A7 /* Json.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -181,6 +191,8 @@
 		3EAAC5B22031BDF1009181A7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3EAAC5C32031C6CB009181A7 /* SuperchargeApi.swift */,
+				3EAAC5C52031C73E009181A7 /* BkkApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -308,9 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAAC5BE2031C24A009181A7 /* Json.swift in Sources */,
+				3EAAC5BC2031C19D009181A7 /* NearbyStops.swift in Sources */,
+				3EAAC5C42031C6CB009181A7 /* SuperchargeApi.swift in Sources */,
 				3EAAC5B62031BFF1009181A7 /* CollectionViewController.swift in Sources */,
 				3EAAC5B42031BF96009181A7 /* ViewController.swift in Sources */,
 				3EAAC5972031BD15009181A7 /* AppDelegate.swift in Sources */,
+				3EAAC5C62031C73E009181A7 /* BkkApi.swift in Sources */,
 				3EAAC5BA2031C032009181A7 /* NavigationViewController.swift in Sources */,
 				3EAAC5B82031C012009181A7 /* MainViewController.swift in Sources */,
 			);
