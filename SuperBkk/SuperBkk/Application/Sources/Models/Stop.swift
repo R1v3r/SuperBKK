@@ -1,5 +1,5 @@
 //
-//  NearbyStops.swift
+//  Stop.swift
 //  SuperBkk
 //
 //  Created by Tamás Czigány on 2018. 02. 12..
@@ -8,17 +8,17 @@
 
 import Foundation
 
-struct NearbyStops {
+struct Stop {
     
     let stop_id: String
     let stop_name: String
     let stop_code: String
-    let stop_lat: Float
-    let stop_lon: Float
+    let stop_lat: Double
+    let stop_lon: Double
     
 }
 
-extension NearbyStops: JsonObject {
+extension Stop: JsonObject {
     internal var jsonValue: Json {
         var json: Json = [:]
         
@@ -31,15 +31,13 @@ extension NearbyStops: JsonObject {
         return json
     }
     
-    
-    
     init(json: Json) throws {
         guard
             let stop_id = json["id"] as? String,
             let stop_name = json["country"] as? String,
             let stop_code = json["zipcode"] as? String,
-            let stop_lat = json["name"] as? Float,
-            let stop_lon = json["state"] as? Float
+            let stop_lat = json["name"] as? Double,
+            let stop_lon = json["state"] as? Double
             else {
                 throw JsonError.parse
         }
