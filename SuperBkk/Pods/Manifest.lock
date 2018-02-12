@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.5.0)
+  - PromiseKit (4.4.0):
+    - PromiseKit/Foundation (= 4.4.0)
+    - PromiseKit/QuartzCore (= 4.4.0)
+    - PromiseKit/UIKit (= 4.4.0)
+  - PromiseKit/CorePromise (4.4.0)
+  - PromiseKit/Foundation (4.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.4.0):
+    - PromiseKit/CorePromise
+  - Reachability (3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - PromiseKit
+  - Reachability
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  PromiseKit: ecf5fe92275d57ee77c9ede858af47a162e9b97e
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+
+PODFILE CHECKSUM: 65e9ef5d80e0c9410453b7e89281d6a28e6a3765
+
+COCOAPODS: 1.2.0

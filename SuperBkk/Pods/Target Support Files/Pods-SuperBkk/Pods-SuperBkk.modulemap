@@ -1,0 +1,6 @@
+framework module Pods_SuperBkk {
+  umbrella header "Pods-SuperBkk-umbrella.h"
+
+  export *
+  module * { export * }
+}

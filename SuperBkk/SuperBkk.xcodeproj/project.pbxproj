@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EAAC5972031BD15009181A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5962031BD15009181A7 /* AppDelegate.swift */; };
+		3EAAC59C2031BD15009181A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59A2031BD15009181A7 /* Main.storyboard */; };
+		3EAAC59E2031BD15009181A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59D2031BD15009181A7 /* Assets.xcassets */; };
+		3EAAC5A12031BD15009181A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59F2031BD15009181A7 /* LaunchScreen.storyboard */; };
+		A865240BE56C392C8420CD16 /* Pods_SuperBkk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EAAC5932031BD15009181A7 /* SuperBkk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperBkk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EAAC5962031BD15009181A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EAAC59B2031BD15009181A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EAAC59D2031BD15009181A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EAAC5A02031BD15009181A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EAAC5A22031BD15009181A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperBkk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE61860FF367F63F9FFC3C7 /* Pods-SuperBkk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperBkk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk.debug.xcconfig"; sourceTree = "<group>"; };
+		967AC7117CD6CD231F7A178D /* Pods-SuperBkk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperBkk.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EAAC5902031BD15009181A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A865240BE56C392C8420CD16 /* Pods_SuperBkk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013FE1F62A987852F5EEC3FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A082F101F7A63A21A650F39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BE61860FF367F63F9FFC3C7 /* Pods-SuperBkk.debug.xcconfig */,
+				967AC7117CD6CD231F7A178D /* Pods-SuperBkk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3EAAC58A2031BD15009181A7 = {
+			isa = PBXGroup;
+			children = (
+				3EAAC5952031BD15009181A7 /* SuperBkk */,
+				3EAAC5942031BD15009181A7 /* Products */,
+				2A082F101F7A63A21A650F39 /* Pods */,
+				013FE1F62A987852F5EEC3FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EAAC5942031BD15009181A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAC5932031BD15009181A7 /* SuperBkk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EAAC5952031BD15009181A7 /* SuperBkk */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAC5A82031BD64009181A7 /* Application */,
+			);
+			path = SuperBkk;
+			sourceTree = "<group>";
+		};
+		3EAAC5A82031BD64009181A7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAC5AA2031BD78009181A7 /* Sources */,
+				3EAAC5A92031BD73009181A7 /* Assets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3EAAC5A92031BD73009181A7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAC59A2031BD15009181A7 /* Main.storyboard */,
+				3EAAC5A22031BD15009181A7 /* Info.plist */,
+				3EAAC59F2031BD15009181A7 /* LaunchScreen.storyboard */,
+				3EAAC59D2031BD15009181A7 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3EAAC5AA2031BD78009181A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAC5962031BD15009181A7 /* AppDelegate.swift */,
+				3EAAC5AB2031BDA4009181A7 /* Cells */,
+				3EAAC5AC2031BDA9009181A7 /* Controllers */,
+				3EAAC5AE2031BDBB009181A7 /* Models */,
+				3EAAC5B22031BDF1009181A7 /* Networking */,
+				3EAAC5AF2031BDC0009181A7 /* Protocols */,
+				3EAAC5B02031BDCB009181A7 /* Utils */,
+				3EAAC5B12031BDDA009181A7 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3EAAC5AB2031BDA4009181A7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3EAAC5AC2031BDA9009181A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAC5AD2031BDB1009181A7 /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3EAAC5AD2031BDB1009181A7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3EAAC5AE2031BDBB009181A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3EAAC5AF2031BDC0009181A7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3EAAC5B02031BDCB009181A7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3EAAC5B12031BDDA009181A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3EAAC5B22031BDF1009181A7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EAAC5922031BD15009181A7 /* SuperBkk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EAAC5A52031BD15009181A7 /* Build configuration list for PBXNativeTarget "SuperBkk" */;
+			buildPhases = (
+				A998A58BBE746F93F6033F5F /* [CP] Check Pods Manifest.lock */,
+				3EAAC58F2031BD15009181A7 /* Sources */,
+				3EAAC5902031BD15009181A7 /* Frameworks */,
+				3EAAC5912031BD15009181A7 /* Resources */,
+				DCFFA87D75CA18775212DB1F /* [CP] Embed Pods Frameworks */,
+				6F834AE24BB205DAB68A5152 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperBkk;
+			productName = SuperBkk;
+			productReference = 3EAAC5932031BD15009181A7 /* SuperBkk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EAAC58B2031BD15009181A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tamás Czigány";
+				TargetAttributes = {
+					3EAAC5922031BD15009181A7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3EAAC58E2031BD15009181A7 /* Build configuration list for PBXProject "SuperBkk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EAAC58A2031BD15009181A7;
+			productRefGroup = 3EAAC5942031BD15009181A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EAAC5922031BD15009181A7 /* SuperBkk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EAAC5912031BD15009181A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAAC5A12031BD15009181A7 /* LaunchScreen.storyboard in Resources */,
+				3EAAC59E2031BD15009181A7 /* Assets.xcassets in Resources */,
+				3EAAC59C2031BD15009181A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F834AE24BB205DAB68A5152 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A998A58BBE746F93F6033F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCFFA87D75CA18775212DB1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EAAC58F2031BD15009181A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAAC5972031BD15009181A7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3EAAC59A2031BD15009181A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EAAC59B2031BD15009181A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EAAC59F2031BD15009181A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EAAC5A02031BD15009181A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EAAC5A32031BD15009181A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EAAC5A42031BD15009181A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EAAC5A62031BD15009181A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BE61860FF367F63F9FFC3C7 /* Pods-SuperBkk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KU3YNL8B32;
+				INFOPLIST_FILE = "$(SRCROOT)/SuperBkk/Application/Assets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TamasCzigany.SuperBkk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3EAAC5A72031BD15009181A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967AC7117CD6CD231F7A178D /* Pods-SuperBkk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KU3YNL8B32;
+				INFOPLIST_FILE = "$(SRCROOT)/SuperBkk/Application/Assets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TamasCzigany.SuperBkk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EAAC58E2031BD15009181A7 /* Build configuration list for PBXProject "SuperBkk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EAAC5A32031BD15009181A7 /* Debug */,
+				3EAAC5A42031BD15009181A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EAAC5A52031BD15009181A7 /* Build configuration list for PBXNativeTarget "SuperBkk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EAAC5A62031BD15009181A7 /* Debug */,
+				3EAAC5A72031BD15009181A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EAAC58B2031BD15009181A7 /* Project object */;
+}
