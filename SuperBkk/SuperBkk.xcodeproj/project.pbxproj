@@ -11,6 +11,10 @@
 		3EAAC59C2031BD15009181A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59A2031BD15009181A7 /* Main.storyboard */; };
 		3EAAC59E2031BD15009181A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59D2031BD15009181A7 /* Assets.xcassets */; };
 		3EAAC5A12031BD15009181A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59F2031BD15009181A7 /* LaunchScreen.storyboard */; };
+		3EAAC5B42031BF96009181A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B32031BF96009181A7 /* ViewController.swift */; };
+		3EAAC5B62031BFF1009181A7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B52031BFF1009181A7 /* CollectionViewController.swift */; };
+		3EAAC5B82031C012009181A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B72031C012009181A7 /* MainViewController.swift */; };
+		3EAAC5BA2031C032009181A7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5B92031C032009181A7 /* NavigationViewController.swift */; };
 		A865240BE56C392C8420CD16 /* Pods_SuperBkk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +25,10 @@
 		3EAAC59D2031BD15009181A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EAAC5A02031BD15009181A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EAAC5A22031BD15009181A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EAAC5B32031BF96009181A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EAAC5B52031BFF1009181A7 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		3EAAC5B72031C012009181A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3EAAC5B92031C032009181A7 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		45F2D03CA91D01258653FDE1 /* Pods_SuperBkk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperBkk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE61860FF367F63F9FFC3C7 /* Pods-SuperBkk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperBkk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk.debug.xcconfig"; sourceTree = "<group>"; };
 		967AC7117CD6CD231F7A178D /* Pods-SuperBkk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperBkk.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperBkk/Pods-SuperBkk.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +142,10 @@
 		3EAAC5AD2031BDB1009181A7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3EAAC5B32031BF96009181A7 /* ViewController.swift */,
+				3EAAC5B52031BFF1009181A7 /* CollectionViewController.swift */,
+				3EAAC5B72031C012009181A7 /* MainViewController.swift */,
+				3EAAC5B92031C032009181A7 /* NavigationViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -296,7 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAAC5B62031BFF1009181A7 /* CollectionViewController.swift in Sources */,
+				3EAAC5B42031BF96009181A7 /* ViewController.swift in Sources */,
 				3EAAC5972031BD15009181A7 /* AppDelegate.swift in Sources */,
+				3EAAC5BA2031C032009181A7 /* NavigationViewController.swift in Sources */,
+				3EAAC5B82031C012009181A7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
