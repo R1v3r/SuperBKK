@@ -11,7 +11,7 @@ import Alamofire
 import PromiseKit
 
 public enum BkkApi: URLRequestConvertible {
-    static let baseURLPath = "http://futar.bkk.hu/bkk-utvonaltervezo-api/ws/otp/api/where/arrivals-and-departures-for-stop.json?stopId="
+    static let baseURLPath = "http://futar.bkk.hu/bkk-utvonaltervezo-api/ws/otp/api/where/arrivals-and-departures-for-stop.json?stopId=BKK_"
     
     case post
     case get
@@ -47,12 +47,11 @@ public enum BkkApi: URLRequestConvertible {
             }
         }()
         
-        let url = try SuperchargeApi.baseURLPath.asURL()
-        
-        var request = URLRequest(url: url.appendingPathComponent(path))
+        let url = try (BkkApi.baseURLPath + path).asURL()
+        var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10 * 1000)
-        
+        print(request)
         return try URLEncoding.default.encode(request, with: parameters)
     }
 }
