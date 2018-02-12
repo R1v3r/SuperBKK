@@ -33,11 +33,11 @@ extension Stop: JsonObject {
     
     init(json: Json) throws {
         guard
-            let stop_id = json["id"] as? String,
-            let stop_name = json["country"] as? String,
-            let stop_code = json["zipcode"] as? String,
-            let stop_lat = json["name"] as? Double,
-            let stop_lon = json["state"] as? Double
+            let stop_id = json["stop_id"] as? String,
+            let stop_name = json["stop_name"] as? String,
+            let stop_code = json["stop_code"] as? String,
+            let stop_lat = json["stop_lat"] as? Double,
+            let stop_lon = json["stop_lon"] as? Double
             else {
                 throw JsonError.parse
         }

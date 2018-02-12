@@ -39,10 +39,11 @@ public enum SuperchargeApi: URLRequestConvertible {
         
         let url = try SuperchargeApi.baseURLPath.asURL()
         
-        var request = URLRequest(url: url.appendingPathComponent(path))
+        var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10 * 1000)
         
+        print(request.description)
         return try URLEncoding.default.encode(request, with: [:])
     }
 }
