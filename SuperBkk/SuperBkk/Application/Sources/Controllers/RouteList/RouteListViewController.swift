@@ -35,14 +35,33 @@ class RouteListViewController: CollectionViewController {
     func reload() {
         Alamofire.request(BkkApi.stop(self.stop_id))
             .responseJSON { response in
-                print(response)
                 guard response.result.isSuccess else {
                     print("Error while fetching tags: \(String(describing: response.result.error))")
                     return
                 }
                 
-                if let responseJSON = response.result.value {
-                    
+                if let responseJSON = response.result.value as? [String: Any] {
+                    if let data = responseJSON["data"] as? [String: Any] {
+                        if let references = data["references"] as? [String: Any] {
+                            if let routes = references["routes"] as? [String: Any] {
+                                let myGroup = DispatchGroup()
+                                
+                                for i in 0 ..< routes.count {
+                                    myGroup.enter()
+                                    
+                                    Route.parse(from: routes[Array(routes.keys)[i]] as AnyObject)
+                                        .then{ parsed -> Void in
+                                            self.dataSource.append(parsed)
+                                            myGroup.leave()
+                                    }
+                                }
+                                
+                                myGroup.notify(queue: .main) {
+                                    self.collectionView.reloadData()
+                                }
+                            }
+                        }
+                    }
                 }
         }
     }
