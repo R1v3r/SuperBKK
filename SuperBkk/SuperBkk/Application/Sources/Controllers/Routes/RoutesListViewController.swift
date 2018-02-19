@@ -1,8 +1,8 @@
 //
-//  RouteListViewController.swift
+//  RoutesListViewController.swift
 //  SuperBkk
 //
-//  Created by Tamás Czigány on 2018. 02. 12..
+//  Created by Tamás Czigány on 2018. 02. 19..
 //  Copyright © 2018. Tamás Czigány. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import UIKit
 import Alamofire
 import PromiseKit
 
-class RouteListViewController: CollectionViewController {
+class RoutesListViewController: CollectionViewController {
     
     var stop_id: String = ""
     var dataSource: [Route] = []
@@ -19,8 +19,8 @@ class RouteListViewController: CollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: RouteListCell.reuseIdentifier, bundle: nil)
-        self.collectionView.register(nib, forCellWithReuseIdentifier: RouteListCell.reuseIdentifier)
+        let nib = UINib(nibName: RoutesListCell.reuseIdentifier, bundle: nil)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: RoutesListCell.reuseIdentifier)
         
         self.collectionView.dataSource = self
         self.collectionView.delegate   = self
@@ -35,21 +35,40 @@ class RouteListViewController: CollectionViewController {
     func reload() {
         Alamofire.request(BkkApi.stop(self.stop_id))
             .responseJSON { response in
-                print(response)
                 guard response.result.isSuccess else {
                     print("Error while fetching tags: \(String(describing: response.result.error))")
                     return
                 }
                 
-                if let responseJSON = response.result.value {
-                    
+                if let responseJSON = response.result.value as? [String: Any] {
+                    if let data = responseJSON["data"] as? [String: Any] {
+                        if let references = data["references"] as? [String: Any] {
+                            if let routes = references["routes"] as? [String: Any] {
+                                let myGroup = DispatchGroup()
+                                
+                                for i in 0 ..< routes.count {
+                                    myGroup.enter()
+                                    
+                                    Route.parse(from: routes[Array(routes.keys)[i]] as AnyObject)
+                                        .then{ parsed -> Void in
+                                            self.dataSource.append(parsed)
+                                            myGroup.leave()
+                                    }
+                                }
+                                
+                                myGroup.notify(queue: .main) {
+                                    self.collectionView.reloadData()
+                                }
+                            }
+                        }
+                    }
                 }
         }
     }
     
 }
 
-extension RouteListViewController: UICollectionViewDataSource {
+extension RoutesListViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -60,7 +79,7 @@ extension RouteListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RouteListCell.reuseIdentifier, for: indexPath) as? RouteListCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RouteListCell.reuseIdentifier, for: indexPath) as? RoutesListCell
         cell?.RouteName.text = String(self.dataSource[indexPath.row].shortName)
         cell?.RouteDescription.text = String(self.dataSource[indexPath.row].description)
         cell?.RouteName.backgroundColor = UIColor(hexString: self.dataSource[indexPath.row].color)
@@ -69,14 +88,14 @@ extension RouteListViewController: UICollectionViewDataSource {
     }
 }
 
-extension RouteListViewController: UICollectionViewDelegate {
+extension RoutesListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        
     }
 }
 
-extension RouteListViewController: UICollectionViewDelegateFlowLayout {
+extension RoutesListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: 122)

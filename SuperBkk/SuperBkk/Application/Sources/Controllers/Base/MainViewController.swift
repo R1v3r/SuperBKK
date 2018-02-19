@@ -23,7 +23,7 @@ final class MainViewController: ViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.present(NavigationViewController(rootViewController:StopListViewController()), animated: animated, completion: nil)
+        self.present(NavigationViewController(rootViewController:StopsListViewController()), animated: animated, completion: nil)
     }
     
     

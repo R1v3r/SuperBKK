@@ -1,8 +1,8 @@
 //
-//  StopListViewController.swift
+//  StopsListViewController.swift
 //  SuperBkk
 //
-//  Created by Tamás Czigány on 2018. 02. 12..
+//  Created by Tamás Czigány on 2018. 02. 14..
 //  Copyright © 2018. Tamás Czigány. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import Alamofire
 import PromiseKit
 import CoreLocation
 
-class StopListViewController: CollectionViewController {
+class StopsListViewController: CollectionViewController {
     
     var dataSource: [Stop] = []
     let baseLocation = CLLocation(latitude: 47.497509, longitude: 19.054193)
@@ -20,8 +20,8 @@ class StopListViewController: CollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: StopListCell.reuseIdentifier, bundle: nil)
-        self.collectionView.register(nib, forCellWithReuseIdentifier: StopListCell.reuseIdentifier)
+        let nib = UINib(nibName: StopsListCell.reuseIdentifier, bundle: nil)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: StopsListCell.reuseIdentifier)
         
         self.collectionView.dataSource = self
         self.collectionView.delegate   = self
@@ -34,28 +34,11 @@ class StopListViewController: CollectionViewController {
     }
     
     func reload() {
-        Alamofire.request(SuperchargeApi.get)
-            .responseJSON { response in
-                print(response.description)
-                guard response.result.isSuccess else {
-                    print("Error while fetching tags: \(String(describing: response.result.error))")
-                    return
-                }
-                
-                if let responseJSON = response.result.value {
-                    Stop.parseList(from: (responseJSON as AnyObject))
-                        .then{stops -> Void in
-                            self.dataSource = stops.filter({ (stop: Stop) -> Bool in
-                                let stopLocation = CLLocation(latitude: stop.stop_lat, longitude: stop.stop_lon)
-                                return (stopLocation.distance(from: self.baseLocation) <= 1000 && stop.stop_code != "")
-                            })
-                    }
-                }
-        }
+       self.collectionView.reloadData()
     }
 }
 
-extension StopListViewController: UICollectionViewDataSource {
+extension StopsListViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -66,22 +49,22 @@ extension StopListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StopListCell.reuseIdentifier, for: indexPath) as? StopListCell
-        cell?.StopName.text = String(self.dataSource[indexPath.row].stop_name)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StopsListCell.reuseIdentifier, for: indexPath) as? StopsListCell
+        cell?.StopNameLabel.text = String(self.dataSource[indexPath.row].stop_name)
         return cell!
     }
 }
 
-extension StopListViewController: UICollectionViewDelegate {
+extension StopsListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController = RouteListViewController()
+        let viewController = RoutesListViewController()
         viewController.stop_id = self.dataSource[indexPath.row].stop_id
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
-extension StopListViewController: UICollectionViewDelegateFlowLayout {
+extension StopsListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: 122)

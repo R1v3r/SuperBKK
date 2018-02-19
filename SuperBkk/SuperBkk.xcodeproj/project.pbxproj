@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E3C2B632031CA140039C461 /* StopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B622031CA140039C461 /* StopListViewController.swift */; };
-		3E3C2B652031CB200039C461 /* RouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B642031CB200039C461 /* RouteListViewController.swift */; };
-		3E3C2B682031CBB00039C461 /* StopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B672031CBB00039C461 /* StopListCell.swift */; };
-		3E3C2B6A2031CBBC0039C461 /* StopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C2B692031CBBC0039C461 /* StopListCell.xib */; };
 		3E3C2B6D2031CC150039C461 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B6C2031CC150039C461 /* CollectionViewCell.swift */; };
 		3E3C2B702031CD4F0039C461 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B6F2031CD4F0039C461 /* Route.swift */; };
-		3E3C2B732031DAEC0039C461 /* RouteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B722031DAEC0039C461 /* RouteListCell.swift */; };
-		3E3C2B752031DB0E0039C461 /* RouteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C2B742031DB0E0039C461 /* RouteListCell.xib */; };
 		3E3C2B782031E10C0039C461 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B772031E10C0039C461 /* UIColor+Hex.swift */; };
+		3E3C2B7F20347CEB0039C461 /* StopsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B7E20347CEB0039C461 /* StopsListViewController.swift */; };
+		3E3C2B8120347D370039C461 /* StopsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B8020347D370039C461 /* StopsMapViewController.swift */; };
+		3E3C2B8320347DC70039C461 /* StopsMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C2B8220347DC70039C461 /* StopsMapView.xib */; };
+		3E3C2B852034869B0039C461 /* AnnotationPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B842034869B0039C461 /* AnnotationPlace.swift */; };
+		3E3C2B88203B19110039C461 /* StopsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B87203B19110039C461 /* StopsListCell.swift */; };
+		3E3C2B8A203B19340039C461 /* StopsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C2B89203B19340039C461 /* StopsListCell.xib */; };
+		3E3C2B8D203B22CD0039C461 /* RoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B8C203B22CD0039C461 /* RoutesListViewController.swift */; };
+		3E3C2B90203B2C6D0039C461 /* RoutesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C2B8F203B2C6D0039C461 /* RoutesListCell.swift */; };
+		3E3C2B92203B2C850039C461 /* RoutesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C2B91203B2C850039C461 /* RoutesListCell.xib */; };
 		3EAAC5972031BD15009181A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAC5962031BD15009181A7 /* AppDelegate.swift */; };
 		3EAAC59C2031BD15009181A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59A2031BD15009181A7 /* Main.storyboard */; };
 		3EAAC59E2031BD15009181A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAC59D2031BD15009181A7 /* Assets.xcassets */; };
@@ -32,15 +35,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E3C2B622031CA140039C461 /* StopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopListViewController.swift; sourceTree = "<group>"; };
-		3E3C2B642031CB200039C461 /* RouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListViewController.swift; sourceTree = "<group>"; };
-		3E3C2B672031CBB00039C461 /* StopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopListCell.swift; sourceTree = "<group>"; };
-		3E3C2B692031CBBC0039C461 /* StopListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopListCell.xib; sourceTree = "<group>"; };
 		3E3C2B6C2031CC150039C461 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3E3C2B6F2031CD4F0039C461 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		3E3C2B722031DAEC0039C461 /* RouteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListCell.swift; sourceTree = "<group>"; };
-		3E3C2B742031DB0E0039C461 /* RouteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteListCell.xib; sourceTree = "<group>"; };
 		3E3C2B772031E10C0039C461 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		3E3C2B7E20347CEB0039C461 /* StopsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsListViewController.swift; sourceTree = "<group>"; };
+		3E3C2B8020347D370039C461 /* StopsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsMapViewController.swift; sourceTree = "<group>"; };
+		3E3C2B8220347DC70039C461 /* StopsMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsMapView.xib; sourceTree = "<group>"; };
+		3E3C2B842034869B0039C461 /* AnnotationPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationPlace.swift; sourceTree = "<group>"; };
+		3E3C2B87203B19110039C461 /* StopsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsListCell.swift; sourceTree = "<group>"; };
+		3E3C2B89203B19340039C461 /* StopsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsListCell.xib; sourceTree = "<group>"; };
+		3E3C2B8C203B22CD0039C461 /* RoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesListViewController.swift; sourceTree = "<group>"; };
+		3E3C2B8F203B2C6D0039C461 /* RoutesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesListCell.swift; sourceTree = "<group>"; };
+		3E3C2B91203B2C850039C461 /* RoutesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesListCell.xib; sourceTree = "<group>"; };
 		3EAAC5932031BD15009181A7 /* SuperBkk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperBkk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAAC5962031BD15009181A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EAAC59B2031BD15009181A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,23 +95,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3E3C2B612031C9FD0039C461 /* StopList */ = {
-			isa = PBXGroup;
-			children = (
-				3E3C2B622031CA140039C461 /* StopListViewController.swift */,
-			);
-			path = StopList;
-			sourceTree = "<group>";
-		};
-		3E3C2B662031CB9B0039C461 /* StopList */ = {
-			isa = PBXGroup;
-			children = (
-				3E3C2B672031CBB00039C461 /* StopListCell.swift */,
-				3E3C2B692031CBBC0039C461 /* StopListCell.xib */,
-			);
-			path = StopList;
-			sourceTree = "<group>";
-		};
 		3E3C2B6B2031CC010039C461 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,29 +103,47 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		3E3C2B6E2031CD150039C461 /* RouteList */ = {
-			isa = PBXGroup;
-			children = (
-				3E3C2B642031CB200039C461 /* RouteListViewController.swift */,
-			);
-			path = RouteList;
-			sourceTree = "<group>";
-		};
-		3E3C2B712031DAD20039C461 /* RouteList */ = {
-			isa = PBXGroup;
-			children = (
-				3E3C2B722031DAEC0039C461 /* RouteListCell.swift */,
-				3E3C2B742031DB0E0039C461 /* RouteListCell.xib */,
-			);
-			path = RouteList;
-			sourceTree = "<group>";
-		};
 		3E3C2B762031E0EE0039C461 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				3E3C2B772031E10C0039C461 /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E3C2B7B20347BA30039C461 /* Stops */ = {
+			isa = PBXGroup;
+			children = (
+				3E3C2B7E20347CEB0039C461 /* StopsListViewController.swift */,
+				3E3C2B8020347D370039C461 /* StopsMapViewController.swift */,
+			);
+			path = Stops;
+			sourceTree = "<group>";
+		};
+		3E3C2B86203B18F90039C461 /* Stops */ = {
+			isa = PBXGroup;
+			children = (
+				3E3C2B87203B19110039C461 /* StopsListCell.swift */,
+				3E3C2B89203B19340039C461 /* StopsListCell.xib */,
+			);
+			path = Stops;
+			sourceTree = "<group>";
+		};
+		3E3C2B8B203B22BB0039C461 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				3E3C2B8C203B22CD0039C461 /* RoutesListViewController.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		3E3C2B8E203B2C5F0039C461 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				3E3C2B8F203B2C6D0039C461 /* RoutesListCell.swift */,
+				3E3C2B91203B2C850039C461 /* RoutesListCell.xib */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		3EAAC58A2031BD15009181A7 = {
@@ -204,9 +211,9 @@
 		3EAAC5AB2031BDA4009181A7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3E3C2B712031DAD20039C461 /* RouteList */,
+				3E3C2B8E203B2C5F0039C461 /* Routes */,
+				3E3C2B86203B18F90039C461 /* Stops */,
 				3E3C2B6B2031CC010039C461 /* Base */,
-				3E3C2B662031CB9B0039C461 /* StopList */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -214,9 +221,9 @@
 		3EAAC5AC2031BDA9009181A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3E3C2B8B203B22BB0039C461 /* Routes */,
+				3E3C2B7B20347BA30039C461 /* Stops */,
 				3EAAC5AD2031BDB1009181A7 /* Base */,
-				3E3C2B6E2031CD150039C461 /* RouteList */,
-				3E3C2B612031C9FD0039C461 /* StopList */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +244,7 @@
 			children = (
 				3EAAC5BB2031C19D009181A7 /* Stop.swift */,
 				3E3C2B6F2031CD4F0039C461 /* Route.swift */,
+				3E3C2B842034869B0039C461 /* AnnotationPlace.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 		3EAAC5B12031BDDA009181A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3E3C2B8220347DC70039C461 /* StopsMapView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,11 +343,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3C2B752031DB0E0039C461 /* RouteListCell.xib in Resources */,
 				3EAAC5A12031BD15009181A7 /* LaunchScreen.storyboard in Resources */,
+				3E3C2B92203B2C850039C461 /* RoutesListCell.xib in Resources */,
 				3EAAC59E2031BD15009181A7 /* Assets.xcassets in Resources */,
 				3EAAC59C2031BD15009181A7 /* Main.storyboard in Resources */,
-				3E3C2B6A2031CBBC0039C461 /* StopListCell.xib in Resources */,
+				3E3C2B8320347DC70039C461 /* StopsMapView.xib in Resources */,
+				3E3C2B8A203B19340039C461 /* StopsListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,21 +408,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EAAC5BE2031C24A009181A7 /* Json.swift in Sources */,
-				3E3C2B732031DAEC0039C461 /* RouteListCell.swift in Sources */,
 				3EAAC5BC2031C19D009181A7 /* Stop.swift in Sources */,
-				3E3C2B632031CA140039C461 /* StopListViewController.swift in Sources */,
 				3EAAC5C42031C6CB009181A7 /* SuperchargeApi.swift in Sources */,
+				3E3C2B88203B19110039C461 /* StopsListCell.swift in Sources */,
 				3EAAC5B62031BFF1009181A7 /* CollectionViewController.swift in Sources */,
+				3E3C2B90203B2C6D0039C461 /* RoutesListCell.swift in Sources */,
 				3E3C2B702031CD4F0039C461 /* Route.swift in Sources */,
 				3EAAC5B42031BF96009181A7 /* ViewController.swift in Sources */,
 				3EAAC5972031BD15009181A7 /* AppDelegate.swift in Sources */,
 				3E3C2B782031E10C0039C461 /* UIColor+Hex.swift in Sources */,
-				3E3C2B682031CBB00039C461 /* StopListCell.swift in Sources */,
+				3E3C2B8D203B22CD0039C461 /* RoutesListViewController.swift in Sources */,
+				3E3C2B7F20347CEB0039C461 /* StopsListViewController.swift in Sources */,
 				3E3C2B6D2031CC150039C461 /* CollectionViewCell.swift in Sources */,
 				3EAAC5C62031C73E009181A7 /* BkkApi.swift in Sources */,
 				3EAAC5BA2031C032009181A7 /* NavigationViewController.swift in Sources */,
 				3EAAC5B82031C012009181A7 /* MainViewController.swift in Sources */,
-				3E3C2B652031CB200039C461 /* RouteListViewController.swift in Sources */,
+				3E3C2B852034869B0039C461 /* AnnotationPlace.swift in Sources */,
+				3E3C2B8120347D370039C461 /* StopsMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

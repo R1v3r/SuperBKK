@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yaV-rJ-B5V" customClass="StopListCell" customModule="SuperBkk" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="479" height="71"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0Mt-N5-nWv" customClass="StopsListCell" customModule="SuperBkk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="479" height="71"/>
+                <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLA-GR-DSD">
-                        <rect key="frame" x="8" y="25" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5m-u9-iF1">
+                        <rect key="frame" x="8" y="15" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -28,16 +28,16 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="oLA-GR-DSD" firstAttribute="leading" secondItem="0zF-Y3-Ykb" secondAttribute="leading" constant="8" id="Scf-Od-k7v"/>
-                <constraint firstItem="0zF-Y3-Ykb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oLA-GR-DSD" secondAttribute="trailing" constant="8" id="Vsp-eM-fHF"/>
-                <constraint firstItem="oLA-GR-DSD" firstAttribute="centerY" secondItem="0zF-Y3-Ykb" secondAttribute="centerY" id="uBP-l6-tWw"/>
+                <constraint firstItem="4sc-dQ-xLG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z5m-u9-iF1" secondAttribute="trailing" constant="8" id="RF0-RF-KDD"/>
+                <constraint firstItem="Z5m-u9-iF1" firstAttribute="centerY" secondItem="4sc-dQ-xLG" secondAttribute="centerY" id="cVl-UX-Cke"/>
+                <constraint firstItem="Z5m-u9-iF1" firstAttribute="leading" secondItem="4sc-dQ-xLG" secondAttribute="leading" constant="8" id="gNw-Mb-Xm7"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="0zF-Y3-Ykb"/>
-            <size key="customSize" width="479" height="71"/>
+            <viewLayoutGuide key="safeArea" id="4sc-dQ-xLG"/>
+            <size key="customSize" width="331" height="50"/>
             <connections>
-                <outlet property="StopName" destination="oLA-GR-DSD" id="zaA-9u-7Zb"/>
+                <outlet property="StopNameLabel" destination="Z5m-u9-iF1" id="esL-Oh-d45"/>
             </connections>
-            <point key="canvasLocation" x="144.5" y="-8.5"/>
+            <point key="canvasLocation" x="162.5" y="12"/>
         </collectionViewCell>
     </objects>
 </document>
